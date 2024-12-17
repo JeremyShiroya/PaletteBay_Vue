@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <SpeedInsights />
     <NavComp @search="handleSearch" @themeChanged="handleThemeChange" />
     <MainComp :searchTerm="searchTerm" :isDarkMode="isDarkMode" />
     <FooterComp />
@@ -8,6 +9,7 @@
 
 <script setup>
 import { ref } from 'vue';
+import { SpeedInsights } from '@vercel/speed-insights/vue';
 import NavComp from '@/components/NavComp.vue';
 import MainComp from "@/components/MainComp.vue";
 import FooterComp from '@/components/FooterComp.vue';
