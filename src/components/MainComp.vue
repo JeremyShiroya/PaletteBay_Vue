@@ -76,7 +76,7 @@ const colors = ref([
         dark: { dull: "#4B0082", bright: "#B39DDB" },
       },
     ],
-    icon: "ri-discord-line",
+    icon: "ri-discord-fill",
   },
   {
     name: "Pink",
