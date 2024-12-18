@@ -31,21 +31,17 @@ import { ref, onMounted } from "vue";
 
 const searchTerm = ref("");
 const isDarkMode = ref(false);
-const emit = defineEmits(["themeChanged"]);
+const emit = defineEmits(["search", "themeChanged"]);
 
 const toggleTheme = () => {
   isDarkMode.value = !isDarkMode.value;
-  document.body.classList.toggle("dark-mode", isDarkMode.value);
-  localStorage.setItem("theme", isDarkMode.value ? "dark" : "light");
   emit("themeChanged", isDarkMode.value);
 };
 
 onMounted(() => {
   const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") {
-    isDarkMode.value = true;
-    document.body.classList.add("dark-mode");
-  }
+  isDarkMode.value = savedTheme === "dark";
+  emit("themeChanged", isDarkMode.value);
 });
 </script>
 

@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted, watch } from 'vue';
 import NavComp from '@/components/NavComp.vue';
 import MainComp from "@/components/MainComp.vue";
 import FooterComp from '@/components/FooterComp.vue';
@@ -15,11 +15,23 @@ import FooterComp from '@/components/FooterComp.vue';
 const searchTerm = ref('');
 const isDarkMode = ref(false);
 
+onMounted(() => {
+  const savedTheme = localStorage.getItem("theme");
+  isDarkMode.value = savedTheme === "dark";
+  document.body.classList.toggle("dark-mode", isDarkMode.value);
+});
+
 const handleSearch = (term) => {
   searchTerm.value = term;
 };
 
 const handleThemeChange = (darkMode) => {
   isDarkMode.value = darkMode;
+  document.body.classList.toggle("dark-mode", isDarkMode.value);
+  localStorage.setItem("theme", isDarkMode.value ? "dark" : "light");
 };
+
+watch(isDarkMode, (newValue) => {
+  document.body.classList.toggle("dark-mode", newValue);
+});
 </script>
