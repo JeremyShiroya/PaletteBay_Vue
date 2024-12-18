@@ -1,15 +1,19 @@
 <template>
   <div id="app">
     <router-view />
+    <SpeedInsights />
   </div>
 </template>
 
 <script setup>
 // No additional setup needed
+import { SpeedInsights } from '@vercel/speed-insights/vue';
+
 </script>
 
 <style>
 @import "https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css";
+
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
