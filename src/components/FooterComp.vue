@@ -2,7 +2,7 @@
     <footer class="footer sticky-footer">
       <div class="footer-container">
         <div class="footer-content">
-          <p class="copyright">&copy; 2024 Palette Bay. All rights reserved.</p>
+          <p class="copyright">&copy; 2025 Palette Bay. All rights reserved.</p>
           <div class="social-links">
             <a
               href="https://github.com/JeremyShiroya"
