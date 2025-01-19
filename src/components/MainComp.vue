@@ -43,7 +43,7 @@ const colors = ref([
         dark: { dull: "#E5393973", bright: "#C85656" },
       },
     ],
-    icon: "ri-pinterest-fill",
+    icon: "ri-error-warning-line",
   },
   {
     name: "Green",
@@ -54,7 +54,7 @@ const colors = ref([
         dark: { dull: "#1D6A3B", bright: "#04E45A" },
       },
     ],
-    icon: "ri-whatsapp-line",
+    icon: "ri-checkbox-circle-line",
   },
   {
     name: "Blue",
@@ -65,7 +65,7 @@ const colors = ref([
         dark: { dull: "#1E3A8A", bright: "#60A5FA" },
       },
     ],
-    icon: "ri-twitter-fill",
+    icon: "ri-lock-password-line",
   },
   {
     name: "Purple",
@@ -76,7 +76,7 @@ const colors = ref([
         dark: { dull: "#4B0082", bright: "#B39DDB" },
       },
     ],
-    icon: "ri-discord-fill",
+    icon: "ri-question-line",
   },
   {
     name: "Pink",
@@ -87,7 +87,7 @@ const colors = ref([
         dark: { dull: "#C71585", bright: "#FF69B4" },
       },
     ],
-    icon: "ri-dribbble-line",
+    icon: "ri-thumb-up-fill",
   },
 ]);
 
