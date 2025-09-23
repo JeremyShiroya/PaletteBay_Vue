@@ -35,15 +35,48 @@ const props = defineProps(['searchTerm', 'isDarkMode']);
 
 const colors = ref([
   {
+    name: "Dull Red",
+    shades: [
+      { 
+        name: "Dull Red", 
+        light: { dull: "#FFEBEE", bright: "#D32F2F" },
+        dark: { dull: "#311111", bright: "#EF5350" },
+      },
+    ],
+    icon: "ri-close-circle-line",
+  },
+  {
     name: "Red",
     shades: [
       { 
         name: "Red", 
         light: { dull: "#FF000073", bright: "#FF0000" },
-        dark: { dull: "#E5393973", bright: "#C85656" },
+        dark: { dull: "#7F1D1D80", bright: "#F87171" },
+      },
+    ],
+    icon: "ri-close-circle-line",
+  },
+  {
+    name: "Orange",
+    shades: [
+      { 
+        name: "Orange", 
+        light: { dull: "#fff3e0", bright: "#f57c00" },
+        dark: { dull: "#332015", bright: "#FF9800" },
       },
     ],
     icon: "ri-error-warning-line",
+  },
+  {
+    name: "Dull Green",
+    shades: [
+      {
+        name: "Dull Green",
+        light: { dull: "#E8F5E8", bright: "#2D7D32" },
+        dark: { dull: "#122116", bright: "#66BB6A" },
+      },
+    ],
+    icon: "ri-checkbox-circle-line",
   },
   {
     name: "Green",
@@ -51,10 +84,21 @@ const colors = ref([
       {
         name: "Green",
         light: { dull: "#23FD7783", bright: "#02A340" },
-        dark: { dull: "#1D6A3B", bright: "#04E45A" },
+        dark: { dull: "#1B5E2080", bright: "#4ADE80" },
       },
     ],
     icon: "ri-checkbox-circle-line",
+  },
+  {
+    name: "Light Blue",
+    shades: [
+      { 
+        name: "Light Blue", 
+        light: { dull: "#e0f0ff", bright: "#2563eb" },
+        dark: { dull: "#0F1A2E", bright: "#3B82F6" },
+      },
+    ],
+    icon: "ri-lock-password-line",
   },
   {
     name: "Blue",
@@ -62,7 +106,7 @@ const colors = ref([
       { 
         name: "Blue", 
         light: { dull: "#2f85E773", bright: "#2563EB" },
-        dark: { dull: "#1E3A8A", bright: "#60A5FA" },
+        dark: { dull: "#1E3A8A80", bright: "#3B82F6" },
       },
     ],
     icon: "ri-lock-password-line",
@@ -73,7 +117,7 @@ const colors = ref([
       {
         name: "Purple",
         light: { dull: "#9370DB73", bright: "#8A2BE2" },
-        dark: { dull: "#4B0082", bright: "#B39DDB" },
+        dark: { dull: "#4B008280", bright: "#A855F7" },
       },
     ],
     icon: "ri-question-line",
@@ -84,7 +128,7 @@ const colors = ref([
       {
         name: "Pink",
         light: { dull: "#FF69B473", bright: "#FF1493" },
-        dark: { dull: "#C71585", bright: "#FF69B4" },
+        dark: { dull: "#80004080", bright: "#EC4899" },
       },
     ],
     icon: "ri-thumb-up-fill",

@@ -31,13 +31,14 @@
           </div>
         </div>
         <div class="powered-by">
-          Powered by -
+          Created by
           <a
             href="https://github.com/JeremyShiroya"
             class="obsidian-link"
             target="_blank"
-            >Codex</a
+            >Jeremy Shiroya</a
           >
+          <!-- with <i class="ri-heart-fill" id="heart"></i> -->
         </div>
       </div>
     </footer>
@@ -106,6 +107,11 @@
   
   .obsidian-link:hover {
     color: var(--link-hover-color);
+  }
+
+  #heart{
+    color: red;
+    fill: 1;
   }
   
   /* Add responsive styles here */
