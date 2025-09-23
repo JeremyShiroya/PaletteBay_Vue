@@ -116,17 +116,21 @@
   
   /* Add responsive styles here */
   @media (max-width: 768px) {
-    .footer-content {
+    footer{
+      display: none;
+    }
+
+    /* .footer-content {
       flex-direction: column;
       gap: 1.5rem;
     }
   
     .copyright {
       text-align: center;
-    }
+    } */
   }
   
-  @media (max-width: 600px) {
+  /* @media (max-width: 600px) {
     .footer-container {
       flex-direction: column;
       gap: 1rem;
@@ -149,7 +153,7 @@
   .sticky-footer {
     position: sticky;
     top: 100vh;
-  }
+  } */
   </style>
   
   
