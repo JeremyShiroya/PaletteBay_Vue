@@ -112,23 +112,23 @@ const colors = ref([
     icon: "ri-lock-password-line",
   },
   {
+    name: "Indigo",
+    shades: [
+      {
+        name: "Indigo",
+        light: { dull: "#E0E7FF", bright: "#4F46E5" },
+        dark: { dull: "#4F46E5", bright: "#818CF8" },
+      },
+    ],
+    icon: "ri-question-line",
+  },
+  {
     name: "Purple",
     shades: [
       {
         name: "Purple",
         light: { dull: "#9370DB73", bright: "#8A2BE2" },
         dark: { dull: "#4B008280", bright: "#A855F7" },
-      },
-    ],
-    icon: "ri-question-line",
-  },
-  {
-    name: "Light Purple",
-    shades: [
-      {
-        name: "Light Purple",
-        light: { dull: "#E0E7FF", bright: "#4F46E5" },
-        dark: { dull: "#E0E7FF", bright: "#4F46E5" },
       },
     ],
     icon: "ri-question-line",
