@@ -123,6 +123,17 @@ const colors = ref([
     icon: "ri-question-line",
   },
   {
+    name: "Light Purple",
+    shades: [
+      {
+        name: "Light Purple",
+        light: { dull: "#E0E7FF", bright: "#4F46E5" },
+        dark: { dull: "#E0E7FF", bright: "#4F46E5" },
+      },
+    ],
+    icon: "ri-question-line",
+  },
+  {
     name: "Pink",
     shades: [
       {
