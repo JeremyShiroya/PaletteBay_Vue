@@ -56,6 +56,8 @@ const colors = ref([
     ],
     icon: "ri-close-circle-line",
   },
+
+
   {
     name: "Orange",
     shades: [
@@ -67,11 +69,13 @@ const colors = ref([
     ],
     icon: "ri-error-warning-line",
   },
+
+
   {
-    name: "background Green",
+    name: "Light Green",
     shades: [
       {
-        name: "background Green",
+        name: "Light Green",
         light: { background: "#E8F5E8", icons: "#2D7D32" },
         dark: { background: "#122116", icons: "#66BB6A" },
       },
@@ -100,6 +104,8 @@ const colors = ref([
     ],
     icon: "ri-checkbox-circle-line",
   },
+
+
   {
     name: "Light Blue",
     shades: [
@@ -122,7 +128,19 @@ const colors = ref([
     ],
     icon: "ri-lock-password-line",
   },
-  
+  {
+    name: "Elegant Blue",
+    shades: [
+      { 
+        name: "Elegant Blue", 
+        light: { background: "#E0F2FE", icons: "#0284C7" },
+        dark: { background: "#1E3A8A80", icons: "#3B82F6" },
+      },
+    ],
+    icon: "ri-lock-password-line",
+  },
+
+
   {
     name: "Indigo",
     shades: [
@@ -134,6 +152,8 @@ const colors = ref([
     ],
     icon: "ri-question-line",
   },
+
+
   {
     name: "Purple",
     shades: [
@@ -145,6 +165,8 @@ const colors = ref([
     ],
     icon: "ri-question-line",
   },
+
+
   {
     name: "Pink",
     shades: [
