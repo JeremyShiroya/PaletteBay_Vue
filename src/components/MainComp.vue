@@ -35,10 +35,10 @@ const props = defineProps(['searchTerm', 'isDarkMode']);
 
 const colors = ref([
   {
-    name: "Dim Red",
+    name: "Dull Red",
     shades: [
       { 
-        name: "Dim Red", 
+        name: "Dull Red", 
         light: { background: "#FFEBEE", icons: "#D32F2F" },
         dark: { background: "#311111", icons: "#EF5350" },
       },
@@ -99,7 +99,8 @@ const colors = ref([
       {
         name: "Elegant Green",
         light: { background: "#85CCB683", icons: "#059669" },
-        dark: { background: "#1B5E2080", icons: "#4ADE80" },
+        dark: { background: "#0D1F18", icons: "#2ECC71" }
+
       },
     ],
     icon: "ri-checkbox-circle-line",
@@ -112,7 +113,8 @@ const colors = ref([
       { 
         name: "Light Blue", 
         light: { background: "#e0f0ff", icons: "#2563eb" },
-        dark: { background: "#0F1A2E", icons: "#3B82F6" },
+        dark: { background: "#0B1E33", icons: "#3B82F6" }
+
       },
     ],
     icon: "ri-lock-password-line",
@@ -123,7 +125,8 @@ const colors = ref([
       { 
         name: "Blue", 
         light: { background: "#2f85E773", icons: "#2563EB" },
-        dark: { background: "#1E3A8A80", icons: "#3B82F6" },
+        dark: { background: "#0B1A33", icons: "#3B82F6" }
+
       },
     ],
     icon: "ri-lock-password-line",
