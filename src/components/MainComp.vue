@@ -9,17 +9,17 @@
         >
           <h3>{{ color.name }}</h3>
           <div class="color-samples">
-            <div class="color-sample" :style="{ background: color.dull }">
-              <i :class="color.icon" :style="{ color: color.bright }"></i>
+            <div class="color-sample" :style="{ background: color.background }">
+              <i :class="color.icon" :style="{ color: color.icons }"></i>
             </div>
             <div
               class="color-sample"
-              :style="{ background: color.bright }"
+              :style="{ background: color.icons }"
             ></div>
           </div>
           <div class="color-info">
-            <span>{{ color.dull }}</span>
-            <span>{{ color.bright }}</span>
+            <span>{{ color.background }}</span>
+            <span>{{ color.icons }}</span>
           </div>
         </div>
       </template>
@@ -35,12 +35,12 @@ const props = defineProps(['searchTerm', 'isDarkMode']);
 
 const colors = ref([
   {
-    name: "Dull Red",
+    name: "Dim Red",
     shades: [
       { 
-        name: "Dull Red", 
-        light: { dull: "#FFEBEE", bright: "#D32F2F" },
-        dark: { dull: "#311111", bright: "#EF5350" },
+        name: "Dim Red", 
+        light: { background: "#FFEBEE", icons: "#D32F2F" },
+        dark: { background: "#311111", icons: "#EF5350" },
       },
     ],
     icon: "ri-close-circle-line",
@@ -50,8 +50,8 @@ const colors = ref([
     shades: [
       { 
         name: "Red", 
-        light: { dull: "#FF000073", bright: "#FF0000" },
-        dark: { dull: "#7F1D1D80", bright: "#F87171" },
+        light: { background: "#FF000073", icons: "#FF0000" },
+        dark: { background: "#7F1D1D80", icons: "#F87171" },
       },
     ],
     icon: "ri-close-circle-line",
@@ -61,19 +61,19 @@ const colors = ref([
     shades: [
       { 
         name: "Orange", 
-        light: { dull: "#fff3e0", bright: "#f57c00" },
-        dark: { dull: "#332015", bright: "#FF9800" },
+        light: { background: "#fff3e0", icons: "#f57c00" },
+        dark: { background: "#332015", icons: "#FF9800" },
       },
     ],
     icon: "ri-error-warning-line",
   },
   {
-    name: "Dull Green",
+    name: "background Green",
     shades: [
       {
-        name: "Dull Green",
-        light: { dull: "#E8F5E8", bright: "#2D7D32" },
-        dark: { dull: "#122116", bright: "#66BB6A" },
+        name: "background Green",
+        light: { background: "#E8F5E8", icons: "#2D7D32" },
+        dark: { background: "#122116", icons: "#66BB6A" },
       },
     ],
     icon: "ri-checkbox-circle-line",
@@ -83,8 +83,19 @@ const colors = ref([
     shades: [
       {
         name: "Green",
-        light: { dull: "#23FD7783", bright: "#02A340" },
-        dark: { dull: "#1B5E2080", bright: "#4ADE80" },
+        light: { background: "#23FD7783", icons: "#02A340" },
+        dark: { background: "#1B5E2080", icons: "#4ADE80" },
+      },
+    ],
+    icon: "ri-checkbox-circle-line",
+  },
+  {
+    name: "Elegant Green",
+    shades: [
+      {
+        name: "Elegant Green",
+        light: { background: "#85CCB683", icons: "#059669" },
+        dark: { background: "#1B5E2080", icons: "#4ADE80" },
       },
     ],
     icon: "ri-checkbox-circle-line",
@@ -94,8 +105,8 @@ const colors = ref([
     shades: [
       { 
         name: "Light Blue", 
-        light: { dull: "#e0f0ff", bright: "#2563eb" },
-        dark: { dull: "#0F1A2E", bright: "#3B82F6" },
+        light: { background: "#e0f0ff", icons: "#2563eb" },
+        dark: { background: "#0F1A2E", icons: "#3B82F6" },
       },
     ],
     icon: "ri-lock-password-line",
@@ -105,19 +116,20 @@ const colors = ref([
     shades: [
       { 
         name: "Blue", 
-        light: { dull: "#2f85E773", bright: "#2563EB" },
-        dark: { dull: "#1E3A8A80", bright: "#3B82F6" },
+        light: { background: "#2f85E773", icons: "#2563EB" },
+        dark: { background: "#1E3A8A80", icons: "#3B82F6" },
       },
     ],
     icon: "ri-lock-password-line",
   },
+  
   {
     name: "Indigo",
     shades: [
       {
         name: "Indigo",
-        light: { dull: "#E0E7FF", bright: "#4F46E5" },
-        dark: { dull: "#4F46E5", bright: "#818CF8" },
+        light: { background: "#E0E7FF", icons: "#4F46E5" },
+        dark: { background: "#4F46E5", icons: "#818CF8" },
       },
     ],
     icon: "ri-question-line",
@@ -127,8 +139,8 @@ const colors = ref([
     shades: [
       {
         name: "Purple",
-        light: { dull: "#9370DB73", bright: "#8A2BE2" },
-        dark: { dull: "#4B008280", bright: "#A855F7" },
+        light: { background: "#9370DB73", icons: "#8A2BE2" },
+        dark: { background: "#4B008280", icons: "#A855F7" },
       },
     ],
     icon: "ri-question-line",
@@ -138,8 +150,8 @@ const colors = ref([
     shades: [
       {
         name: "Pink",
-        light: { dull: "#FF69B473", bright: "#FF1493" },
-        dark: { dull: "#80004080", bright: "#EC4899" },
+        light: { background: "#FF69B473", icons: "#FF1493" },
+        dark: { background: "#80004080", icons: "#EC4899" },
       },
     ],
     icon: "ri-thumb-up-fill",
@@ -180,8 +192,8 @@ const filteredColors = computed(() => {
         const currentMode = props.isDarkMode ? 'dark' : 'light';
         if (isHexSearch && hexSearchTerm.length >= 4) {
           return (
-            compareHexColors(hexSearchTerm, shade[currentMode].bright) ||
-            compareHexColors(hexSearchTerm, shade[currentMode].dull.slice(0, -2))
+            compareHexColors(hexSearchTerm, shade[currentMode].icons) ||
+            compareHexColors(hexSearchTerm, shade[currentMode].background.slice(0, -2))
           );
         } else if (!isHexSearch) {
           return (
@@ -195,8 +207,8 @@ const filteredColors = computed(() => {
         const currentMode = props.isDarkMode ? 'dark' : 'light';
         return {
           name: shade.name,
-          dull: shade[currentMode].dull,
-          bright: shade[currentMode].bright,
+          background: shade[currentMode].background,
+          icons: shade[currentMode].icons,
           icon: colorGroup.icon,
         };
       })
