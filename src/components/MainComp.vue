@@ -56,26 +56,49 @@ const colors = ref([
     ],
     icon: "ri-close-circle-line",
   },
+  
+  {
+  name: "Elegant Red",
+  shades: [
+    { 
+      name: "Elegant Red", 
+      light: { background: "#FECACA83", icons: "#B91C1C" },
+      dark: { background: "#330A0A", icons: "#F87171" },
+    },
+  ],
+  icon: "ri-close-circle-line",
+},
+
+
+{
+  name: "Orange",
+  shades: [
+    { 
+      name: "Orange", 
+      light: { background: "#fff3e0", icons: "#f57c00" },
+      dark: { background: "#332015", icons: "#FF9800" },
+    },
+  ],
+  icon: "ri-error-warning-line",
+},
+{
+  name: "Elegant Orange",
+  shades: [
+    { 
+      name: "Elegant Orange", 
+      light: { background: "#FFE5B483", icons: "#C05600" },
+      dark: { background: "#33200D", icons: "#FFA500" },
+    },
+  ],
+  icon: "ri-error-warning-line",
+},
 
 
   {
-    name: "Orange",
-    shades: [
-      { 
-        name: "Orange", 
-        light: { background: "#fff3e0", icons: "#f57c00" },
-        dark: { background: "#332015", icons: "#FF9800" },
-      },
-    ],
-    icon: "ri-error-warning-line",
-  },
-
-
-  {
-    name: "Light Green",
+    name: "Dull Green",
     shades: [
       {
-        name: "Light Green",
+        name: "Dull Green",
         light: { background: "#E8F5E8", icons: "#2D7D32" },
         dark: { background: "#122116", icons: "#66BB6A" },
       },
@@ -117,7 +140,7 @@ const colors = ref([
 
       },
     ],
-    icon: "ri-lock-password-line",
+    icon: "ri-shield-line",
   },
   {
     name: "Blue",
@@ -129,7 +152,7 @@ const colors = ref([
 
       },
     ],
-    icon: "ri-lock-password-line",
+    icon: "ri-shield-line",
   },
   {
     name: "Elegant Blue",
@@ -140,7 +163,7 @@ const colors = ref([
         dark: { background: "#1E3A8A80", icons: "#3B82F6" },
       },
     ],
-    icon: "ri-lock-password-line",
+    icon: "ri-shield-line",
   },
 
 
@@ -153,7 +176,18 @@ const colors = ref([
         dark: { background: "#4F46E5", icons: "#818CF8" },
       },
     ],
-    icon: "ri-question-line",
+    icon: "ri-book-line",
+  },
+  {
+    name: "Elegant Indigo",
+    shades: [
+      { 
+        name: "Elegant Indigo", 
+        light: { background: "#DDEAFE83", icons: "#4F46E5" },
+        dark: { background: "#100D33", icons: "#818CF8" },
+      },
+    ],
+    icon: "ri-book-line",
   },
 
 
@@ -166,7 +200,18 @@ const colors = ref([
         dark: { background: "#4B008280", icons: "#A855F7" },
       },
     ],
-    icon: "ri-question-line",
+    icon: "ri-star-line",
+  },
+  {
+    name: "Elegant Purple",
+    shades: [
+      { 
+        name: "Elegant Purple", 
+        light: { background: "#E9D5FF83", icons: "#7C3AED" },
+        dark: { background: "#1A0D33", icons: "#C084FC" },
+      },
+    ],
+    icon: "ri-star-line",
   },
 
 
@@ -179,7 +224,18 @@ const colors = ref([
         dark: { background: "#80004080", icons: "#EC4899" },
       },
     ],
-    icon: "ri-thumb-up-fill",
+    icon: "ri-heart-line",
+  },
+  {
+    name: "Elegant Pink",
+    shades: [
+      { 
+        name: "Elegant Pink", 
+        light: { background: "#FBCFEA83", icons: "#BE185D" },
+        dark: { background: "#33101F", icons: "#F472B6" },
+      },
+    ],
+    icon: "ri-heart-line",
   },
 ]);
 
