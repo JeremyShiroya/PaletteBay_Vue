@@ -92,6 +92,17 @@ const colors = ref([
   ],
   icon: "ri-error-warning-line",
 },
+{
+  name: "Peach Orange",
+  shades: [
+    { 
+      name: "Peach Orange", 
+      light: { background: "#fed7aa", icons: "#ea580c" },
+      dark: { background: "#331F0F", icons: "#FB923C" }
+    },
+  ],
+  icon: "ri-error-warning-line",
+},
 
 
   {
