@@ -4,7 +4,7 @@ module.exports = defineConfig({
   transpileDependencies: true,
   pwa: {
     name: 'PaletteBay',
-    themeColor: '#FFFFFF',
+    themeColor: '#ffffff',
     msTileColor: '#000000',
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'black',
