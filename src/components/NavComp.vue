@@ -67,7 +67,7 @@ nav {
 }
 
 .nav-left {
-  display: flex;
+  display: none;
   align-items: center;
 }
 
