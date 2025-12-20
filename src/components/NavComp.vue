@@ -128,6 +128,7 @@ img {
   }
 
   .nav-left {
+    display: none;
     width: 70px;
   }
 
